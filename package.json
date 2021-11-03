@@ -1,0 +1,36 @@
+{
+  "name": "directorstalkfilm.com",
+  "version": "1.0.0",
+  "description": "Blog Website ",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesablanco/directorstalkfilm.com.git"
+  },
+  "author": "James Blanco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesablanco/directorstalkfilm.com/issues"
+  },
+  "homepage": "https://github.com/jamesablanco/directorstalkfilm.com#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.3.2",
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "postcss": "^8.3.9",
+    "postcss-100vh-fix": "^1.0.2",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.4"
+  }
+}
