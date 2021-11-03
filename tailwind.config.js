@@ -1,19 +1,26 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
-  purge: ["./**/*.css", "./**/*.js", "./**/*.php", "./**/*.twig"],
-  darkMode: 'class',
+  purge: ["./global.css", "./templates/**/*.twig"],
+  darkMode: "media",
   theme: {
     extend: {
       colors: {
-        primary: colors.sky, 
+        primary: colors.sky,
         gray: colors.coolGray,
-      }
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: theme("colors.primary.500"),
+          },
+        },
+      }),
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-  ],
-}
+  variants: {
+    extend: {},
+  },
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
+};

@@ -1,7 +1,7 @@
 {% if posts.pagination.pages is not empty %}
-	<nav class="pagination-block">
+	<nav class="my-4">
 		<ul
-			class="pagination">
+			class="inline-flex gap-2">
 
 			{# First #}
 			{% if posts.pagination.pages|first and posts.pagination.pages|first.current != true %}
@@ -40,12 +40,12 @@
 
 			{# Next #}
 			{% if posts.pagination.next %}
-				<li class="next btn">
+				<li class="">
 					<a href="{{ posts.pagination.next.link }}">Next</a>
 				</li>
 			{% else %}
-				<li class="next btn disabled">
-					<button disabled>Next</button>
+				<li class="">
+					<button class="text-gray-100" disabled>Next</button>
 				</li>
 			{% endif %}
 

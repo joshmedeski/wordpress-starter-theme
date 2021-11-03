@@ -1,10 +1,6 @@
-{% extends "layout/default.twig" %}
+{% extends "layout/prose.twig" %}
 
-{% block content %}
-	<article>
-		<h1>{{post.title}}</h1>
-		<div class="prose">
-			{{post.content}}
-		</div>
-	</article>
+{% block prose %}
+	<h1>{{post.title}}</h1>
+	{{post.content}}
 {% endblock %}
